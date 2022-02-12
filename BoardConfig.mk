@@ -26,6 +26,10 @@ TARGET_OTA_ASSERT_DEVICE := z3dual
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
+# LZMA compression for recovery's & kernel ramdisk....
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/z3dual/custombootimg.mk
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
+
 # Partition information
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656294912
