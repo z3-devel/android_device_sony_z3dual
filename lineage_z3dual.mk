@@ -18,20 +18,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from z3 device
-$(call inherit-product, device/sony/z3/z3.mk)
+$(call inherit-product, device/sony/z3dual/z3dual.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_z3
-PRODUCT_DEVICE := z3
+PRODUCT_NAME := lineage_z3dual
+PRODUCT_DEVICE := z3dual
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia Z3
+PRODUCT_MODEL := Xperia Z3 Dual
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="D6603-user 6.0.1 23.5.A.1.291 2769308465 release-keys"
+    PRIVATE_BUILD_DESC="D6633-user 6.0.1 23.5.A.1.291 2769308465 release-keys"
 
-BUILD_FINGERPRINT := Sony/D6603/D6603:6.0.1/23.5.A.1.291/2769308465:user/release-keys
+BUILD_FINGERPRINT := Sony/D6633/D6633:6.0.1/23.5.A.1.291/2769308465:user/release-keys

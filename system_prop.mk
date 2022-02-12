@@ -25,12 +25,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Semc
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.semc.version.sw=1282-2729 \
-    ro.semc.version.cust=1288-7827 \
+    ro.semc.version.sw=1286-4838 \
+    ro.semc.version.cust=1288-7358 \
     ro.semc.version.cust_revision=R4D \
-    ro.semc.product.model=D6603 \
+    ro.semc.product.model=D6633 \
     ro.semc.ms_type_id=PM-0800-BV
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.disable_flexmap=1 \
+    persist.radio.multisim.config=dsds \
+    persist.radio.ignore_dom_time=120 \
+    rild.libargs=-d[SPACE]/dev/smd0 \
+    ril.subscription.types=NV,RUIM \
+    persist.telephony.oosisdc=false \
+    ro.telephony.default_network=9,1 \
+    ro.ril.telephony.mqanelements=5 \
+    ro.multisim.set_audio_params=true
+    
 # LCD
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480

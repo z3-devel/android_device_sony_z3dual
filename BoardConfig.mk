@@ -18,10 +18,10 @@
 # inherit from the shinano-common
 include device/sony/shinano-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/z3
+DEVICE_PATH := device/sony/z3dual
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := z3
+TARGET_OTA_ASSERT_DEVICE := z3dual
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
@@ -37,4 +37,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from proprietary files
-include vendor/sony/z3/BoardConfigVendor.mk
+include vendor/sony/z3dual/BoardConfigVendor.mk

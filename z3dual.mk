@@ -64,4 +64,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd.cal
 
 # Call the proprietary setup
-$(call inherit-product, vendor/sony/z3/z3-vendor.mk)
+$(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
